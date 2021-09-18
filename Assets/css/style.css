@@ -67,11 +67,11 @@ h2 {
 
 /* Hero Content */
 .hero {
-  background-image: url("/assets/images/bkgrnd-w-moon-photo.png");
+  background-image: url("../images/bkgrnd-w-moon-photo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  min-height: 567px;
+  height: 567px;
   width: 100%;
   color: var(--dark);
   padding: 2% 6%;
