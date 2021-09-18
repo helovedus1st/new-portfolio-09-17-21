@@ -1,0 +1,83 @@
+/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
+:root {
+    /* declare a variable with `--` syntax */
+    --dark: #004c52;
+    --light: #a0e1e5;
+    --tween: #00818a;
+    --x-light: #e2feff;
+    font-family: sans-serif;
+
+}
+
+main {
+  background-color: var(--x-light);
+  line-height: 1.5;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5% 1rem 0;
+    background-color: var(--dark);
+    color: var(--dark);
+}
+
+h1 {
+  font-size: 300%;
+  background-color: var(--light);
+  padding: .5rem 1% .5rem 5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: var(--light);
+  font-weight: bold;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  margin-right: 30px;
+  background-image: linear-gradient(270deg, var(--light) 0%, var(--light) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2rem;
+  background-position: bottom;
+  transition: all 0.3s ease-in;
+}
+
+nav a:hover {
+  background-size: 100% 100%;
+  color: var(--tween);
+  background-color: var(--light);
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+h2 {
+  font-size: 200%;
+  background-color: var(--light);
+  padding: .5rem 1rem
+}
+
+/* Hero Content */
+.hero {
+  background-image: url("/assets/images/bkgrnd-w-moon-photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  min-height: 567px;
+  width: 100%;
+  color: var(--dark);
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  padding-left: 10vw;
+}
