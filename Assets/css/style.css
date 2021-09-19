@@ -5,8 +5,12 @@
     --light: #a0e1e5;
     --tween: #00818a;
     --x-light: #e2feff;
-    font-family: sans-serif;
+    background-color: var(--x-light);
 
+}
+
+body {
+    font-family: 'Lucida Sans Unicode', sans-serif;
 }
 
 main {
@@ -65,6 +69,29 @@ h2 {
   padding: .5rem 1rem
 }
 
+section {
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+
+}
+
+h3 {
+  font-size: 7vw;
+  border-bottom: .3rem solid var(--dark);
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
+  text-align: left;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
 /* Hero Content */
 .hero {
   background-image: url("../images/bkgrnd-w-moon-photo.png");
@@ -80,6 +107,10 @@ h2 {
   align-items: flex-end;
   text-align: right;
   padding-left: 10vw;
+}
+
+.aboutme {
+  
 }
 
 .contactme a {
