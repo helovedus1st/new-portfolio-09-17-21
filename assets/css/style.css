@@ -64,7 +64,7 @@ nav a:last-child {
 }
 
 h2 {
-  font-size: 200%;
+  font-size: 5vw;
   text-align: center;
   background-color: var(--light);
   padding: .5rem 1rem
@@ -72,15 +72,16 @@ h2 {
 
 section {
   max-width: 85%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
+  margin-top: 1.5em;
+}
+
+summary {
 }
 
 article {    
+
   border-top: .3rem solid var(--dark);
   margin-top: 1.5rem;
   padding-top: .5rem;
@@ -108,7 +109,7 @@ p {
   color: var(--dark);
   padding: 2% 6%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
   text-align: right;
   padding-left: 10vw;
@@ -197,18 +198,16 @@ p {
   }
   
   section {
-    max-width: 85%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 0 0 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    align-items: flex-start;
+    flex-flow: row nowrap;    
+  }
+
+  summary {    
+    width:20%
   }
 
   article {
+    width: 76%;
     border-top: none;
     border-left: .3rem solid var(--dark);
     margin-left: 1.5rem;
@@ -216,32 +215,42 @@ p {
   }
   
   h3 {
-    font-size: 7vw;
-    text-align: left;
+    font-size: 300%;
+    text-align: right;
   }
   
   p {
     margin-bottom: 1rem;
   }
+  
+  .hero {
+    justify-content: flex-end;
+  }
 
   .aboutme {
-    display: flex;
-    flex-flow: row nowrap;
   }
 
   .aboutme h3 {
-    font-size: 400%;
-    text-align: right;     
+       
   }
 
-  .work {
+  .link-images {
   display: flex;
-  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  }
+
+  .link-images a:first-child {
+  padding: 1%;
+  flex-basis: 100%
+  }
+
+  .link-images a {
+  padding: 1%;
+  flex-basis: 50%
   }
 
   .work h3 {
-    font-size: 400%;
-    text-align: right;
+    
   }
 
   .work img {
