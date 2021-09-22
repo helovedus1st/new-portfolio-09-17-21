@@ -33,7 +33,7 @@ h1 {
   background-color: var(--light);
   padding: .5rem 1% .5rem 5%;
 }
-
+  
 nav {
   display: flex;
   justify-content: space-between;
@@ -46,13 +46,14 @@ nav a {
   text-decoration: none;
   padding: .5rem 1rem;
   margin-right: 30px;
+  /* creating attractive effect for nav links part 1*/
   background-image: linear-gradient(270deg, var(--light) 0%, var(--light) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2rem;
   background-position: bottom;
   transition: all 0.3s ease-in;
 }
-
+  /* creating attractive effect for nav links part 2*/
 nav a:hover {
   background-size: 100% 100%;
   color: var(--tween);
@@ -93,6 +94,7 @@ h4 {
   color: var(--dark);
 }
 
+/* subheading for link labels */
 span {
   font-size: 150%;
   font-family: monospace;
@@ -121,6 +123,7 @@ footer {
   height: 567px;
   width: 100%;
   color: var(--dark);
+  /* code to cause our subheading to float in a desirable location */
   padding: 2% 6%;
   display: flex;
   justify-content: center;
@@ -129,16 +132,14 @@ footer {
   padding-left: 10vw;
 }
 
-.aboutme {
-  
-}
-
+/* begin work section content */
 .link-images {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 }
 
+/* makes all work links appear the same size */
 .link-images a {
 flex-basis: 100%;
 height: 24vw;
@@ -150,6 +151,7 @@ text-decoration: none;
 position: relative;
 }
 
+/* makes our labels appear in a desirable location floating above the images */
 .link-label {
   background-color: var(--light);
   width: 150px;
@@ -159,6 +161,7 @@ position: relative;
   left: -2px;
 }
 
+/* opacity for link# and opacity change for link hovers for attractive effect */
 .link1 {
   background-image: url("../images/lu-tec.png");
   opacity: 0.7;
@@ -209,6 +212,7 @@ position: relative;
   transition: 0.4s;
 }
 
+/* begin contact me section content */
 .contactme article {  
 display: flex;
 flex-direction: column;
@@ -221,6 +225,7 @@ align-items: flex-start;
   text-decoration: none;
   padding: .5rem 0;
   margin-right: 30px;
+/* creating attractive effect for contact me links part 1*/
   background-image: linear-gradient(270deg, var(--dark) 0%, var(--dark) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2rem;
@@ -228,75 +233,35 @@ align-items: flex-start;
   transition: all 0.3s ease-in;
 }
 
+/* removing right margin for best appearance */
 .contactme a:last-child {
   margin-right: 0px;
 }
 
+/* creating attractive effect for contact me links part 2*/
 .contactme a:hover {
   background-size: 100% 100%;
   color: var(--light);
   background-color: var(--dark);
   }
 
-.work a img {
-  border: .5em solid var(--light);
-}
-
+/* here we begin adjusting content for larger viewing areas */
 @media screen and (min-width: 1025px) {
   header {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
     padding: 1rem 5% 1rem 0;
-    background-color: var(--dark);
-    color: var(--dark);
   }
   
   h1 {
     width: unset;
     font-size: 400%;
-    background-color: var(--light);
-    padding: .5rem 1% .5rem 5%;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-  }
-  
-  nav a {
-    color: var(--light);
-    font-weight: bold;
-    text-decoration: none;
-    padding: .5rem 1rem;
-    margin-right: 30px;
-    background-image: linear-gradient(270deg, var(--light) 0%, var(--light) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2rem;
-    background-position: bottom;
-    transition: all 0.3s ease-in;
-  }
-  
-  nav a:hover {
-    background-size: 100% 100%;
-    color: var(--tween);
-    background-color: var(--light);
-  }
-  
-  nav a:last-child {
-    margin-right: 0;
   }
   
   h2 {
     font-size: 200%;
-    text-align: center;
-    background-color: var(--light);
-    padding: .5rem 1rem
   }
   
+  /* displaying sections in rows now */
   section {
     display: flex;
     flex-flow: row nowrap;    
@@ -306,6 +271,7 @@ align-items: flex-start;
     width:20%
   }
 
+  /* moving borders and copy around for horizontal styling */
   article {
     width: 76%;
     border-top: none;
@@ -319,10 +285,7 @@ align-items: flex-start;
     text-align: right;
   }
   
-  p {
-    margin-bottom: 1rem;
-  }
-  
+  /* moving subheading (personal title) to more desirable location */
   .hero {
     justify-content: flex-end;
   }
@@ -333,6 +296,7 @@ align-items: flex-start;
   justify-content: space-between;
   }
 
+  /* we only want the first item to display larger so we use first-child */
   .link-images a:first-child {
   flex-basis: 100%;
   height: 30vw;
@@ -348,6 +312,7 @@ align-items: flex-start;
   position: relative;
   }
 
+  /* switching contact me info to row styling from column */
   .contactme article {  
   display: flex;
   flex-direction: row;
@@ -355,8 +320,4 @@ align-items: flex-start;
   font-size: 1.56vw;
   justify-content: space-between;
   }
-}
-
-@media screen and (min-width: 1025px) {
-  
 }
