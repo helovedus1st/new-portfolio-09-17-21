@@ -119,6 +119,80 @@ p {
   
 }
 
+.link-images {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.link-images a {
+flex-basis: 100%;
+height: 24vw;
+margin-top: 2vw;
+border: .4em solid var(--light);
+flex-basis: 100%;
+height: 24vw;
+text-decoration: none;
+}
+
+.link-label {
+  background-color: var(--light);
+  width: 150px;
+  z-index: 6;
+  position: relative;
+  bottom: -10px;
+}
+
+.link1 {
+  background-image: url("../images/lu-tec.png");
+  opacity: 0.7;
+}
+
+.link1:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.link2 {
+  background-image: url("../images/horiseon.png");
+  opacity: 0.7;
+}
+
+.link2:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.link3 {
+  background-image: url("../images/triplepoint.png");
+  opacity: 0.7;
+}
+
+.link3:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.link4 {
+  background-image: url("../images/Meta__Logo.jpg");
+  opacity: 0.7;
+}
+
+.link4:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.link5 {
+  background-image: url("../images/triplepoint.png");
+  opacity: 0.7;
+}
+
+.link5:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+
 .contactme a {
   color: var(--dark);
   font-weight: bold;
@@ -218,6 +292,17 @@ p {
     font-size: 300%;
     text-align: right;
   }
+
+  h4 {
+    font-size: 125%;
+    color: var(--dark);
+  }
+
+  span {
+    font-size: 150%;
+    font-family: monospace;
+    color: var(--tween);
+  }
   
   p {
     margin-bottom: 1rem;
@@ -237,16 +322,31 @@ p {
   .link-images {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   }
 
   .link-images a:first-child {
-  padding: 1%;
-  flex-basis: 100%
+  flex-basis: 100%;
+  height: 30vw;
+  margin: unset;
   }
 
   .link-images a {
-  padding: 1%;
-  flex-basis: 50%
+  border: .4em solid var(--light);
+  margin-top: .8vw;
+  height: 12vw;
+  flex-basis: 49.4%;
+  text-decoration: none;
+  position: relative;
+  }
+
+  .link-label {
+    background-color: var(--light);
+    width: 150px;
+    z-index: 6;
+    position: absolute;
+    bottom: 10px;
+    left: -1px;
   }
 
   .work h3 {
@@ -256,9 +356,8 @@ p {
   .work img {
     border: 5px solid var(--dark);
   }
-  
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 1025px) {
   
 }
