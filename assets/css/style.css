@@ -163,7 +163,7 @@ position: relative;
 
 /* opacity for link# and opacity change for link hovers for attractive effect */
 .link1 {
-  background-image: url("../images/lu-tec.png");
+  background-image: url("../images/cryptotrader-edge-screenshot.PNG");
   opacity: 0.7;
 }
 
@@ -173,7 +173,7 @@ position: relative;
 }
 
 .link2 {
-  background-image: url("../images/horiseon.png");
+  background-image: url("../images/workday-scheduler-screenshot.PNG");
   opacity: 0.7;
 }
 
@@ -183,7 +183,7 @@ position: relative;
 }
 
 .link3 {
-  background-image: url("../images/triplepoint.png");
+  background-image: url("../images/lu-tec.png");
   opacity: 0.7;
 }
 
